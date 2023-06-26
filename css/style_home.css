@@ -169,11 +169,11 @@ button:hover{
 
 ::-webkit-scrollbar{
     width: 10px;
-    background-color: #1f165f;
+    background-color: #77ee07;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #110d30;
+    background-color: #1f165f;
 }
 
 footer{

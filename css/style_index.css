@@ -2,14 +2,14 @@
 
 
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-align: center;
-    font-family: 'Press Start 2P', cursive;
-    width: 100%;
-    max-width: 1980px;
+*{ /*  O * seleciona todos os elementos da página.*/
+    padding: 0; /* Define a quantidade de espaço entre o conteúdo de um elemento e suas bordas internas  */
+    margin: 0; /* Define a quantidade de espaço entre os elementos e suas bordas externas  */
+    box-sizing: border-box; /* */
+    text-align: center; /* */
+    font-family: 'Press Start 2P', cursive; /* */
+    width: 100%; /* */
+    max-width: 1980px; /* */
 }
 
 body{
@@ -142,16 +142,16 @@ div.container_3{
 
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar{ /* scroll da tela*/
     width: 10px;
     background-color: #77ee07;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb{ /* barra do scroll da tela*/
     background-color: #1f165f;
 }
 
-footer{
+footer{ /* rodapé*/
     width: 100%;
     max-width: 1980px;
     padding: 10px;
