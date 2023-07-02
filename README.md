@@ -1,5 +1,10 @@
-# PMI
-Bind.it
+# PMI - PROJETO MULTIDISCIPLINAR INTEGRADOR I
+
+GERAÇÃO DE IDEIAS E MODELAGEM DE NEGÓCIOS
+CURSO SUPERIOR DE TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
+
+Nome do Projeto: Bind.it
+  
 🙁 Problema: Após notar uma dificuldade entre a comunicação de pessoas em jogos online, o nosso grupo decidiu desenvolver um site que facilite e proporcione a união de pessoas com interesses mútuos.
 
 🙂 Nicho: O site será desenvolvido para os clientes que procuram reunir-se para compartilhar informações/ lazer/ troca de experiências... 
