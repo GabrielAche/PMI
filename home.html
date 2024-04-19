@@ -1,91 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bind.it</title>
-    <link rel="stylesheet" href="./css/style_home.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namora comigo?</title>
 </head>
 
 <body>
-
-    <div class="container"> <!-- box da logo -->
-        <div class="cabecalho">
-            <img src="./images/logo.png" alt="logo">
+    <div id="conteudo">
+        <h2>Aceita namorar comigo?</h2>
+        <div style="margin: auto;width: 170px;">
+            <button style="position: fixed;display: block;cursor: pointer;" class="btn" onclick="sim()">SIM</button>
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;cursor: pointer;">NÃO</button>
         </div>
     </div>
 
-    <div class="info1"> <!-- box do problema -->
-        <div class="span1">
-            <h1> Problema </h1>
-            <span>
-                Após notar uma dificuldade entre a comunicação de pessoas em jogos online, decidimos desenvolver um site
-                para proporcionar um ambiente agradável e focado na comunicação de pessoas com interesses mútuos.
-                Através de um perfil, conseguiremos diferenciar o estilo de gameplay de cada jogador, casual,
-                competitivo, entretenimento.
-            </span>
-        </div>
+    <!-- Spam -->
+    <div id="spam" style="display: none;">
+        <h2>Você ganhou um prêmio incrível!</h2>
+        <button class="btn" onclick="fecharSpam()" onmouseover="fecharSpam()" style="cursor: pointer;">OK</button>
     </div>
 
-    <div class="info2"> <!-- box da proposta de valor -->
-        <div class="span2">
-            <h1> Proposta de valor </h1>
-            <span>
-                O site busca outra alternativa para solucionar a dificuldade de comunicação entre os players. Criando
-                uma rede social, a qual dividirá os players em categorias. Essas categorias serão feitas pelos próprios
-                players, atraves do perfil, desse modo, gerando um ambiente personalizado. Com isso, desejamos que os
-                players se sintam confortaveis para jogar e se divirtam.
-            </span>
-        </div>
-    </div>
+</body>
+<style>
+    #conteudo {
+        background: #1212e1;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-family: sans-serif;
+    }
 
-    <div class="info3"> <!-- box do nicho -->
-        <div class="span3">
-            <h1> Nicho </h1>
-            <span>
-                O site será desenvolvido para os clientes que procuram reunir-se para jogar com pessoas que buscam o
-                mesmo tipo de gameplay. Também para compartilhar informações/ lazer/ troca de experiências... Com isso o
-                nosso cliente deve ter acesso a internet, tanto pelo dispositivo mobile ou desktop, para conseguir
-                usufruir de nosso serviço.
-            </span>
-        </div>
-    </div>
+    .btn {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 80px;
+        border-radius: 5px;
+    }
+</style>
 
-    <div class="info4"> <!-- box do recusos/tecnologias -->
-        <div class="span4">
-            <h1> Recursos/tecnologias </h1>
-            <span>
-               - HTML  - CSS - Figma
-            </span>
-        </div>
-    </div>
+<script>
+    function sim() {
+        alert("💙💙💙 Você aceitou namorar comigo! 💙💙💙\n                   Agora clique no botão OK");
+        // redireciona para um URL após clicar no SIM
+        location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
+    }
 
-    <div class="curiosidades"> <!-- box de jogos disponiveis -->
-        <h1> Desenvolvimento do Projeto </h1>
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
 
-        <div class="box"> <!-- box de  -->
-            <img src="./images/fonteslogos.png">
-            <img src="./images/versao1.png">
-            <img src="./images/versao2.png">
-            <img src="./images/versao3.png">
-            <img src="./images/versao4.png">
-        </div>
-    </div>
+    function fecharSpam() {
+        document.getElementById("spam").style.display = "none";
+    }
 
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
 
+</script>
 
-    <div class="voltar"> <!-- box do botão voltar -->
-        <button>
-            <a href="./index.html" target="_blank">
-                Voltar
-            </a>
-        </button>
-    </div> 
-
-    <footer> <!-- box do Roda pé -->
-        <li>Equipe: Gabriel Ache, Matheus Marques, Victor Piva</li>
-    </footer>
 </body>
 
 </html>
